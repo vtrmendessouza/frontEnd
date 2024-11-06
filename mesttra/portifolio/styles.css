@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #2d3436;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #35424a;
+  color: #FFF;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: 5px solid #e8491d;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+header nav {
+  text-align: center;
+}
+
+header nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+.list-item {
+  display: inline;
+}
+
+.list-item a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 5px;
+  transition: all 0.5s;
+}
+
+a:hover {
+  color: #e8491d;
+} 
+
+main {
+  padding: 20px 0px;
+}
+
+section { 
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #35424a;
+  border-bottom: 2px solid #e8491d;
+  padding-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+}
+
+th {
+  background: #512a09;
+  color: #FFF;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+tr:hover {
+  cursor: pointer;
+  background: #f2f2f2;
+}
+
+/* projetos */
+#projetos article{
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px -8px rgba(0,0,0,0.60);
+}
+
+/* contato */
+form {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 10px 10px 15px -8px rgba(0,0,0,0.60);
+}
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+}
+
+textarea {
+  font-family: "Montserrat", sans-serif;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #e8491d;
+  color: #FFF;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+form button:hover {
+  border: 2px solid #2d3436;
+}
+
+/* contato */
+#contato {
+  list-style: none;
+  padding: 0;
+}
+
+#contato li {
+  display: inline;
+  margin-right: 10px;
+}
+
+#contato a{
+  font-size: 30px;
+  text-decoration: none;
+  color: #35424a;
+}
+
+#contato a:hover {
+  color: #e8491d;
+}
+
+footer { 
+  background: #35424a;
+  color: #FFF;
+  text-align: center;
+  padding: 10px 0px;
+  margin-top: 20px;
+}
+
+
+.fa-star {
+  color: rgb(179, 179, 48);
+}
+.fa-star-half-stroke {
+  color: rgb(179, 179, 48);
+}
