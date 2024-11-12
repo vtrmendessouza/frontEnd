@@ -1,0 +1,44 @@
+{
+  "alunos": [
+    {
+      "id": "1",
+      "nome": "Ivonaldo",
+      "CPF": "000.000.000-00",
+      "email": "ivo@teste.com",
+      "telefone": "11 99999-9999",
+      "data_cadastro": "11/11/2024"
+    },
+    {
+      "id": "7ccc",
+      "nome": "Maria Campos",
+      "cpf": "001005003687",
+      "email": "maria.campos@email.com",
+      "tel": "119865489798",
+      "date": "2024-11-11"
+    },
+    {
+      "id": "8715",
+      "nome": "maria silva ",
+      "cpf": "168684684",
+      "email": "maria@teste.com",
+      "tel": "224894984",
+      "date": "2024-11-06"
+    },
+    {
+      "id": "6baa",
+      "nome": "Maria ",
+      "cpf": "1684684648",
+      "email": "teste@teste.com",
+      "tel": "1874898998",
+      "date": "2024-11-11"
+    },
+    {
+      "id": "cb83",
+      "nome": "Joao da Silva",
+      "cpf": "026689469849",
+      "email": "joao@email.com",
+      "tel": "11986584745",
+      "date": "2024-11-11"
+    }
+  ]
+}

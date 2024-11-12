@@ -1,0 +1,12 @@
+{
+  "alunos": [
+    { 
+      "id": "1", 
+      "nome": "Ivonaldo", 
+      "CPF": "000.000.000-00",
+      "email": "ivo@teste.com",
+      "telefone": "11 99999-9999",
+      "data_cadastro": "11/11/2024"
+    }
+  ]
+}

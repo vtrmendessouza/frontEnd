@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Livros</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+  <header class="w3-bar w3-black">
+    <a href="../index.html" class="w3-bar-item w3-button w3-mobile w3-green">Home</a>
+    <nav class="w3-dropdown-hover w3-mobile">
+        <button class="w3-button">Cadastro</button>
+        <div class="w3-dropdown-content w3-bar-block w3-border w3-dark-grey">
+            <a href="./cadastro.html" class="w3-bar-item w3-button w3-green w3-mobile">Alunos</a>
+            <a href="" class="w3-bar-item w3-button w3-green w3-mobile">Professores</a>
+            <a href="#" class="w3-bar-item w3-button w3-green w3-mobile">Autores</a>
+            <a href="#" class="w3-bar-item w3-button w3-green w3-mobile">Categorias</a>
+            <a href="#" class="w3-bar-item w3-button w3-green w3-mobile">Editoras</a>
+            <a href="#" class="w3-bar-item w3-button w3-green w3-mobile">Livros</a>
+        </div>
+    </nav>
+    <nav class="w3-dropdown-hover w3-mobile">
+        <button class="w3-button">Emprestimo</button>
+        <div class="w3-dropdown-content w3-bar-block w3-border w3-dark-grey">
+            <a href="#" class="w3-bar-item w3-button w3-green w3-mobile">Emprestar</a>
+            <a href="#" class="w3-bar-item w3-button w3-green w3-mobile">Devolver</a>
+        </div>
+    </nav>
+    <nav class="w3-dropdown-hover w3-mobile">
+        <button class="w3-button">Relatórios</button>
+        <div class="w3-dropdown-content w3-bar-block w3-border w3-dark-grey">
+            <a href="#" class="w3-bar-item w3-button w3-green w3-mobile">Empréstimo</a>
+            <a href="#" class="w3-bar-item w3-button w3-green w3-mobile">Devoluções em atraso</a>
+        </div>
+    </nav>
+</header>
+<section class="w3-container w3-light-gray">
+    <h1>Cadastro de Livros</h1>             
+    <div class="w3-card-4 w3-white w3-padding">
+        <form class="w3-container w3-padding">
+            <!-- Primeira linha -->
+            <div class="w3-row-padding">
+                <div class="w3-half">
+                    <label class="w3-text-dark-grey"><b>Título*</b></label>
+                    <input class="w3-input w3-border" type="text" required>
+                </div>
+                <div class="w3-half">
+                    <label class="w3-text-dark-grey"><b>Subtítulo</b></label>
+                    <input class="w3-input w3-border" type="text">
+                </div>
+            </div>
+
+            <!-- Segunda linha -->
+            <div class="w3-row-padding w3-padding-16">
+                <div class="w3-third">
+                    <label class="w3-text-dark-grey"><b>ISBN*</b></label>
+                    <input class="w3-input w3-border" type="text" required>
+                </div>
+                <div class="w3-third">
+                    <label class="w3-text-dark-grey"><b>Ano de Publicação*</b></label>
+                    <input class="w3-input w3-border" type="number" min="1900" required>
+                </div>
+                <div class="w3-third">
+                    <label class="w3-text-dark-grey"><b>Edição</b></label>
+                    <input class="w3-input w3-border" type="number" min="1">
+                </div>
+            </div>
+
+            <!-- Terceira linha -->
+            <div class="w3-row-padding">
+                <div class="w3-half">
+                    <label class="w3-text-dark-grey"><b>Autor*</b></label>
+                    <select class="w3-select w3-border" required>
+                        <option value="" disabled>Selecione os autores</option>
+                        <option value="1">Carlos Drummond</option>
+                        <option value="2">Machado de Assis</option>
+                        <option value="3">Clarice Lispector</option>
+                    </select>
+                </div>
+                <div class="w3-half">
+                    <label class="w3-text-dark-grey"><b>Editora*</b></label>
+                    <select class="w3-select w3-border" required>
+                        <option value="" disabled selected>Selecione a editora</option>
+                        <option value="1">Companhia das Letras</option>
+                        <option value="2">Rocco</option>
+                        <option value="3">Record</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Quarta linha -->
+            <div class="w3-row-padding w3-padding-16">
+                <div class="w3-half">
+                    <label class="w3-text-dark-grey"><b>Categorias*</b></label>
+                    <select class="w3-select w3-border" required multiple>
+                        <option value="" disabled>Selecione as categorias</option>
+                        <option value="1">Literatura Brasileira</option>
+                        <option value="2">Romance</option>
+                        <option value="3">Poesia</option>
+                    </select>
+                </div>
+                <div class="w3-quarter">
+                    <label class="w3-text-dark-grey"><b>Preço*</b></label>
+                    <input class="w3-input w3-border" type="number" step="0.01" min="0" required>
+                </div>
+                <div class="w3-quarter">
+                    <label class="w3-text-dark-grey"><b>Quantidade*</b></label>
+                    <input class="w3-input w3-border" type="number" min="0" required>
+                </div>
+            </div>
+
+            <!-- Quinta linha -->
+            <div class="w3-row-padding">
+                <div class="w3-col">
+                    <label class="w3-text-dark-grey"><b>Sinopse</b></label>
+                    <textarea class="w3-input w3-border" rows="4"></textarea>
+                </div>
+            </div>
+
+            <!-- Sexta linha -->
+            <div class="w3-row-padding w3-padding-16">
+                <div class="w3-half">
+                    <label class="w3-text-dark-grey"><b>Capa do Livro</b></label>
+                    <input class="w3-input w3-border" type="file" accept="image/*">
+                </div>
+                <div class="w3-half">
+                    <label class="w3-text-dark-grey"><b>Status</b></label>
+                    <select class="w3-select w3-border" required>
+                        <option value="disponivel" selected>Disponível</option>
+                        <option value="indisponivel">Indisponível</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Botões -->
+            <div class="w3-row w3-margin-top">
+                <div class="w3-col w3-container m3 l3">
+                    <button class="w3-button w3-green w3-margin-top w3-round" type="submit">Cadastrar</button>
+                    <button class="w3-button w3-gray-light w3-margin-top w3-round" type="button">Limpar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
