@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biblioteca - Cadastro de Alunos</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <header class="w3-bar w3-black">
+            <a href="../index.html" class="w3-bar-item w3-button w3-mobile w3-green">Home</a>
+            <nav class="w3-dropdown-hover w3-mobile">
+                <button  class="w3-bar-item w3-button w3-mobile w3-green">Cadastros</button>
+                <div class="w3-dropdown-content w3-bar-block w3-border w3-dark-grey">
+                    <a href="../cadastro/cadastroAlunos.html" class="w3-bar-item w3-button w3-green w3-mobile">Alunos</a>
+                    <a href="../cadastro/cadastroProfessores.html" class="w3-bar-item w3-button w3-green w3-mobile">Professores</a>
+                    <a href="../cadastro/cadastroAutores.html" class="w3-bar-item w3-button w3-green w3-mobile">Autores</a>
+                    <a href="../cadastro/cadastroCategorias.html" class="w3-bar-item w3-button w3-green w3-mobile">Categorias</a>
+                    <a href="../cadastro/cadastroEditoras.html" class="w3-bar-item w3-button w3-green w3-mobile">Editoras</a>
+                    <a href="../cadastro/cadastroLivros.html" class="w3-bar-item w3-button w3-green w3-mobile">Livros</a>
+                </div>
+            </nav>
+            <nav class="w3-dropdown-hover w3-mobile">
+                <button  class="w3-bar-item w3-button w3-mobile w3-green">Empréstimo</button>
+                <div class="w3-dropdown-content w3-bar-block w3-border w3-dark-grey">
+                    <a href="../emprestimo/emprestar.html" class="w3-bar-item w3-button w3-green w3-mobile">Emprestar</a>
+                    <a href="../emprestimo/devolver.html" class="w3-bar-item w3-button w3-green w3-mobile">Devolver</a>
+                </div>
+            </nav>
+            <nav class="w3-dropdown-hover w3-mobile">
+                <button  class="w3-bar-item w3-button w3-mobile w3-green">Relatórios</button>
+                <div class="w3-dropdown-content w3-bar-block w3-border w3-dark-grey">
+                    <a href="../relatorio/emprestimos.html" class="w3-bar-item w3-button w3-green w3-mobile">Empréstimos</a>
+                    <a href="../relatorio/devolucoesEmAtraso.html" class="w3-bar-item w3-button w3-green w3-mobile">Devoluções em Atraso</a>
+                </div>
+            </nav>
+            <nav class="w3-dropdown-hover w3-mobile">
+                <button  class="w3-bar-item w3-button w3-mobile w3-green">Listagem</button>
+                <div class="w3-dropdown-content w3-bar-block w3-border w3-dark-grey">
+                    <a href="../listagem/listagemAlunos.html" class="w3-bar-item w3-button w3-green w3-mobile">Alunos</a>
+                    <a href="../listagem/listagemProfessores.html" class="w3-bar-item w3-button w3-green w3-mobile">Professores</a>
+                    <a href="../listagem/listagemAutores.html" class="w3-bar-item w3-button w3-green w3-mobile">Autores</a>
+                    <a href="../listagem/listagemCategorias.html" class="w3-bar-item w3-button w3-green w3-mobile">Categorias</a>
+                    <a href="../listagem/listagemEditoras.html" class="w3-bar-item w3-button w3-green w3-mobile">Editores</a>
+                    <a href="../listagem/listagemLivros.html" class="w3-bar-item w3-button w3-green w3-mobile">Livros</a></div>
+                </div>
+            </nav>
+        </header>
+        <section class="w3-container w3-light-gray">
+            <h1>Listagem de Cadastro de Autores</h1>
+            <div class="w3-card-4 w3-light-white w3-padding-16 w3-margin">
+                <div class="w3-responsive">
+                    <table class="w3-table w3-striped w3-bordered w3-hoverable w3-margin-top">
+                        <thead>
+                            <tr class="w3-light-grey">
+                                <th>Nome da Editora</th>
+                                <th>CNPJ</th>
+                                <th>Razão Social</th>
+                                <th>Endereço Completo</th>
+                                <th>Telefone Comercial</th>
+                                <th>E-mail Comercial</th>
+                                <th>Site</th>
+                                <th>Nome do Contato Responsável</th>
+                                <th>Telefone do Contato</th>
+                                <th>Data de Cadastro</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="result"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <script src="../script/editoras.js"></script>
+    </body>
+</html>

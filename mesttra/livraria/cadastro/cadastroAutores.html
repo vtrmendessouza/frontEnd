@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biblioteca - Cadastro de Professores</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <header class="w3-bar w3-black">
+            <a href="../index.html" class="w3-bar-item w3-button w3-mobile w3-green">Home</a>
+            <nav class="w3-dropdown-hover w3-mobile">
+                <button class="w3-bar-item w3-button w3-mobile w3-green">Cadastros</button>
+                <div class="w3-dropdown-content w3-bar-block w3-border w3-dark-grey">
+                    <a href="./cadastroAlunos.html" class="w3-bar-item w3-button w3-green w3-mobile">Alunos</a>
+                    <a href="./cadastroProfessores.html" class="w3-bar-item w3-button w3-green w3-mobile">Professores</a>
+                    <a href="./cadastroAutores.html" class="w3-bar-item w3-button w3-green w3-mobile">Autores</a>
+                    <a href="./cadastroCategorias.html" class="w3-bar-item w3-button w3-green w3-mobile">Categorias</a>
+                    <a href="./cadastroEditoras.html" class="w3-bar-item w3-button w3-green w3-mobile">Editoras</a>
+                    <a href="./cadastroLivros.html" class="w3-bar-item w3-button w3-green w3-mobile">Livros</a>
+                </div>
+            </nav>
+            <nav class="w3-dropdown-hover w3-mobile">
+                <button class="w3-bar-item w3-button w3-mobile w3-green">Empréstimos</button>
+                <div class="w3-dropdown-content w3-bar-block w3-border w3-dark-grey">
+                    <a href="../emprestimo/emprestar.html" class="w3-bar-item w3-button w3-green w3-mobile">Emprestar</a>
+                    <a href="../emprestimo/devolver.html" class="w3-bar-item w3-button w3-green w3-mobile">Devolver</a>
+                </div>
+            </nav>
+            <nav class="w3-dropdown-hover w3-mobile">
+                <button class="w3-bar-item w3-button w3-mobile w3-green">Relatórios</button>
+                <div class="w3-dropdown-content w3-bar-block w3-border w3-dark-grey">
+                    <a href="../relatorio/emprestimos.html" class="w3-bar-item w3-button w3-green w3-mobile">Empréstimos</a>
+                    <a href="../relatorio/devolucoesEmAtraso.html" class="w3-bar-item w3-button w3-green w3-mobile">Devoluções em Atraso</a>
+                </div>
+            </nav>
+            <nav class="w3-dropdown-hover w3-mobile">
+                <button  class="w3-bar-item w3-button w3-mobile w3-green">Listagem</button>
+                <div class="w3-dropdown-content w3-bar-block w3-border w3-dark-grey">
+                    <a href="../listagem/listagemAlunos.html" class="w3-bar-item w3-button w3-green w3-mobile">Alunos</a>
+                    <a href="../listagem/listagemProfessores.html" class="w3-bar-item w3-button w3-green w3-mobile">Professores</a>
+                    <a href="../listagem/listagemAutores.html" class="w3-bar-item w3-button w3-green w3-mobile">Autores</a>
+                    <a href="../listagem/listagemCategorias.html" class="w3-bar-item w3-button w3-green w3-mobile">Categorias</a>
+                    <a href="../listagem/listagemEditoras.html" class="w3-bar-item w3-button w3-green w3-mobile">Editores</a>
+                    <a href="../listagem/listagemLivros.html" class="w3-bar-item w3-button w3-green w3-mobile">Livros</a></div>
+                </div>
+            </nav>
+        </header>
+        <section class="w3-container w3-light-gray">
+            <h1>Cadastro de Autores</h1>
+            <form class="w3-card-4 w3-light-white w3-padding-16 w3-margin">
+                <div class="w3-row-padding">
+                    <div class="w3-col m6 l4">
+                        <label for="nome-completo">Nome Completo:</label>
+                        <input type="text" id="nome-completo" class="w3-input w3-border w3-round" placeholder="Digite o Nome Completo" required>
+                    </div>
+                    <div class="w3-col m6 l4">
+                        <label for="nome-artistico">Nome Artístico/Pseudônimo:</label>
+                        <input type="text" id="nome-artistico" class="w3-input w3-border w3-round" placeholder="Se houver">
+                    </div>
+                    <div class="w3-col m6 l4">
+                        <label for="nacionalidade">Nacionalidade:</label>
+                        <select id="nacionalidade" class="w3-select w3-border w3-round" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="Alemã">Alemã</option>
+                            <option value="Americana">Americana</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Brasileira">Brasileira</option>
+                            <option value="Britânica">Britânica</option>
+                            <option value="Canadense">Canadense</option>
+                            <option value="Chinesa">Chinesa</option>
+                            <option value="Francesa">Francesa</option>
+                            <option value="Italiana">Italiana</option>
+                            <option value="Japonesa">Japonesa</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-col m6 l4">
+                        <label for="data-nascimento">Data de Nascimento:</label>
+                        <input type="date" id="data-nascimento" class="w3-input w3-border w3-round" required>
+                    </div>
+                    <div class="w3-col m6 l8">
+                        <label for="biografia">Biografia Resumida:</label>
+                        <textarea id="biografia" class="w3-input w3-border w3-round" placeholder="Digite uma breve biografia" rows="4" required></textarea>
+                    </div>
+                </div>
+                <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-col m6 l4">
+                        <label for="email-contato">E-mail para Contato:</label>
+                        <input type="email" id="email-contato" class="w3-input w3-border w3-round" placeholder="exemplo@email.com" required>
+                    </div>
+                    <div class="w3-col m6 l4">
+                        <label for="area-escrita">Área Principal de Escrita:</label>
+                        <input type="text" id="area-escrita" class="w3-input w3-border w3-round" placeholder="Digite a área principal de escrita" required>
+                    </div>
+                    <div class="w3-col m6 l4">
+                        <label>Status:</label><br>
+                        <input type="radio" id="ativo" name="status" value="Ativo" required>
+                        <label for="ativo">Ativo</label>
+                        <input type="radio" id="inativo" name="status" value="Inativo">
+                        <label for="inativo">Inativo</label>
+                    </div>
+                </div>
+                <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-col m12">
+                        <button class="w3-button w3-green w3-round" type="submit">Cadastrar</button>
+                        <button class="w3-button w3-light-gray w3-round" type="reset">Limpar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>

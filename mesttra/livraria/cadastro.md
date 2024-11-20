@@ -8,7 +8,7 @@
 - Titulação (graduação, mestrado, doutorado)
 - Data de admissão
 - Número de registro profissional (se aplicável)
-- Status (ativo/inativo)  (radio buitton)
+- Status (ativo/inativo) (radio buitton)
 
 2. AUTORES:
 - Nome completo
@@ -55,4 +55,3 @@
 - Quantidade em estoque
 - Status (disponível/indisponível) (radio buitton)
 - Data de cadastro
-

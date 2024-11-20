@@ -11,14 +11,14 @@
         <header class="w3-bar w3-black">
             <a href="../index.html" class="w3-bar-item w3-button w3-mobile w3-green">Home</a>
             <nav class="w3-dropdown-hover w3-mobile">
-                <button class="w3-bar-item w3-button w3-mobile w3-green">Cadastro</button>
+                <button class="w3-bar-item w3-button w3-mobile w3-green">Cadastros</button>
                 <div class="w3-dropdown-content w3-bar-block w3-border w3-dark-grey">
                     <a href="./cadastroAlunos.html" class="w3-bar-item w3-button w3-green w3-mobile">Alunos</a>
-                    <a href="../cadastro/professores.html" class="w3-bar-item w3-button w3-green w3-mobile">Professores</a>
-                    <a href="../cadastro/autores.html" class="w3-bar-item w3-button w3-green w3-mobile">Autores</a>
-                    <a href="../cadastro/categorias.html" class="w3-bar-item w3-button w3-green w3-mobile">Categorias</a>
-                    <a href="../cadastro/editoras.html" class="w3-bar-item w3-button w3-green w3-mobile">Editoras</a>
-                    <a href="../cadastro/livros.html" class="w3-bar-item w3-button w3-green w3-mobile">Livros</a>
+                    <a href="./cadastroProfessores.html" class="w3-bar-item w3-button w3-green w3-mobile">Professores</a>
+                    <a href="./cadastroAutores.html" class="w3-bar-item w3-button w3-green w3-mobile">Autores</a>
+                    <a href="./cadastroCategorias.html" class="w3-bar-item w3-button w3-green w3-mobile">Categorias</a>
+                    <a href="./cadastroEditoras.html" class="w3-bar-item w3-button w3-green w3-mobile">Editoras</a>
+                    <a href="./cadastroLivros.html" class="w3-bar-item w3-button w3-green w3-mobile">Livros</a>
                 </div>
             </nav>
             <nav class="w3-dropdown-hover w3-mobile">
@@ -35,38 +35,52 @@
                     <a href="../relatorio/devolucoesEmAtraso.html" class="w3-bar-item w3-button w3-green w3-mobile">Devoluções em Atraso</a>
                 </div>
             </nav>
+            <nav class="w3-dropdown-hover w3-mobile">
+                <button  class="w3-bar-item w3-button w3-mobile w3-green">Listagem</button>
+                <div class="w3-dropdown-content w3-bar-block w3-border w3-dark-grey">
+                    <a href="../listagem/listagemAlunos.html" class="w3-bar-item w3-button w3-green w3-mobile">Alunos</a>
+                    <a href="../listagem/listagemProfessores.html" class="w3-bar-item w3-button w3-green w3-mobile">Professores</a>
+                    <a href="../listagem/listagemAutores.html" class="w3-bar-item w3-button w3-green w3-mobile">Autores</a>
+                    <a href="../listagem/listagemCategorias.html" class="w3-bar-item w3-button w3-green w3-mobile">Categorias</a>
+                    <a href="../listagem/listagemEditoras.html" class="w3-bar-item w3-button w3-green w3-mobile">Editores</a>
+                    <a href="../listagem/listagemLivros.html" class="w3-bar-item w3-button w3-green w3-mobile">Livros</a></div>
+                </div>
+            </nav>
         </header>
         <section class="w3-container w3-light-gray">
             <h1>Cadastro de Alunos</h1>
             <form class="w3-card-4 w3-light-white w3-padding-16 w3-margin">
-                <div class="w3-row">
-                    <div class="w3-col w3-container m3 l3">
+                <div class="w3-row w3-margin-bottom">
+                    <div class="w3-col w3-container m4 l4">
                         <label for="nome">Nome Completo:</label>
                         <input type="text" id="nome" class="w3-input w3-border w3-round" placeholder="Digite o nome completo:" required>
                     </div>
-                    <div class="w3-col w3-container m3 l3">
+                    <div class="w3-col w3-container m4 l4">
                         <label for="cpf">CPF:</label>
                         <input type="text" id="cpf" class="w3-input w3-border w3-round" placeholder="XXX.XXX.XXX-XX" required>
                     </div>
-                    <div class="w3-col w3-container m3 l3">
+                    <div class="w3-col w3-container m4 l4">
                         <label for="email">E-mail:</label>
                         <input type="email" id="email" class="w3-input w3-border w3-round" placeholder="exemplo@email.com" required>
                     </div>
-                    <div class="w3-col w3-container m3 l3">
+                </div>
+                <div class="w3-row w3-margin-bottom">
+                    <div class="w3-col w3-container m4 l4">
                         <label for="tel">Telefone:</label>
                         <input type="tel" id="tel" class="w3-input w3-border w3-round" placeholder="(XX) XXXXX-XXXX" required>
                     </div>
-                </div>
-                <div class="w3-row w3-margin-top">
-                    <div class="w3-col w3-container m3 l3">
+                    <div class="w3-col w3-container m4 l4">
                         <label for="date">Data de Cadastro:</label>
                         <input type="date" id="date" class="w3-input w3-border w3-round" required>
                     </div>
+                    <div class="w3-col w3-container m4 l4"></div>
                 </div>
                 <div class="w3-row w3-margin-top">
-                    <div class="w3-col w3-container m3 l3">
-                        <button class="w3-button w3-green w3-margin-top w3-round" type="submit">Cadastrar</button>
-                        <button class="w3-button w3-gray-light w3-margin-top w3-round" type="submit">Limpar</button>
+                    <div class="w3-row-padding w3-margin-top">
+                        <div class="w3-col">
+                            <button class="w3-button w3-green w3-round" type="submit">Cadastrar</button>
+                            <button class="w3-button w3-light-gray w3-round" type="reset">Limpar</button>
+                        </div>
                     </div>
                 </div>
             </form>
