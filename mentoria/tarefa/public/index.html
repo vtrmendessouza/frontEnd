@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo de estilo -->
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Gerenciador de Tarefas</h1>
+    </header>
+    <main>
+      <!-- Formulário para inserir nova tarefa -->
+      <div class="task-input">
+        <input type="text" id="task-input" placeholder="Adicione uma nova tarefa" />
+        <button onclick="addTask()">Adicionar</button>
+      </div>
+      
+      <!-- Lista de tarefas -->
+      <ul id="task-list"></ul> 
+    </main>
+    <footer>
+      <p>© 2024 Gerenciador de Tarefas</p>
+    </footer>
+  </div>
+  <script src="script.js"></script> <!-- Link para o arquivo JS -->
+</body>
+</html>

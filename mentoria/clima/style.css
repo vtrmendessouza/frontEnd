@@ -1,0 +1,64 @@
+/* Estilização geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Estilo do título */
+h1 {
+    margin-top: 20px;
+    color: #0077cc;
+}
+
+/* Estilo do campo de entrada */
+input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo dos botões */
+button {
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Mudança de cor ao passar o mouse no botão */
+button:hover {
+    background-color: #005fa3;
+}
+
+/* Estilo do parágrafo de mensagens */
+#mensagem {
+    margin: 15px 0;
+    font-style: italic;
+}
+
+/* Estilo do contêiner de resultados */
+#resultado {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do texto de temperatura */
+.temperatura {
+    font-size: 2em;
+    color: #0077cc;
+}
+
+/* Estilo do ícone do clima */
+.icone {
+    margin-top: 10px;
+}

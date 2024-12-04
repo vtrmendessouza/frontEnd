@@ -1,0 +1,17 @@
+{
+    "tasks": [
+      {
+        "id": "1",
+        "text": "Comprar leite"
+      },
+      {
+        "id": "2",
+        "text": "Estudar para o exame"
+      },
+      {
+        "id": "3",
+        "text": "Nova tarefa adicionada manualmente"
+      }
+    ]
+  }
+  
