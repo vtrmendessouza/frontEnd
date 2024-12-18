@@ -1,6 +1,6 @@
 // Função para buscar as tarefas do servidor
 const fetchTasks = async () => {
-  const response = await fetch('http://localhost:3000/tasks');
+  const response = await fetch('http://localhost:3000/api/tasks');
   const tasks = await response.json();
   displayTasks(tasks);
 };
@@ -36,7 +36,7 @@ const addTask = async () => {
 
   const newTask = { text: taskText, id: Date.now().toString() };
 
-  const response = await fetch('http://localhost:3000/tasks', {
+  const response = await fetch('http://localhost:3000/api/tasks', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -54,7 +54,7 @@ const addTask = async () => {
 
 // Função para excluir uma tarefa
 const deleteTask = async (id) => {
-  const response = await fetch(`http://localhost:3000/tasks/${id}`, {
+  const response = await fetch(`http://localhost:3000/api/tasks/${id}`, {
     method: 'DELETE',
   });
 

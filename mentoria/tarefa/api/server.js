@@ -3,6 +3,9 @@ const path = require('path');
 const fs = require('fs');
 const app = express();
 const port = 3000; // Definindo a porta 3000
+const cors = require("cors");
+
+app.use(cors("*"));
 
 // Para servir arquivos estáticos da pasta 'public'
 app.use(express.static(path.join(__dirname, 'public')));
@@ -25,6 +28,7 @@ app.post('/api/tasks', express.json(), (req, res) => {
     if (err) {
       return res.status(500).json({ message: 'Erro ao ler o arquivo de tarefas' });
     }
+    //console.log(err, data);
 
     const tasks = JSON.parse(data);
     tasks.push(newTask);
