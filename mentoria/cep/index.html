@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cadastro de Usuários</h1>
+    <form id="user-form">
+
+        <label for="nome">Nome:</label>
+        <input id="nome" type="text" required /><br /><br />
+    
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" required>
+            <option value="">Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select><br /><br />
+    
+        <label for="cep">CEP:</label>
+        <input id="cep" type="text" maxlength="8" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required />
+        <button type="button" onclick="fetchAddressFromCep()">Buscar Endereço</button><br /><br />
+    
+        <label for="rua">Rua:</label>
+        <input id="rua" type="text" readonly /><br /><br />
+    
+        <label for="bairro">Bairro:</label>
+        <input id="bairro" type="text" readonly /><br /><br />
+    
+        <label for="cidade">Cidade:</label>
+        <input id="cidade" type="text" readonly /><br /><br />
+    
+        <label for="estado">Estado:</label>
+        <input id="estado" type="text" readonly /><br /><br />
+    
+        <label for="pais">País:</label>
+        <input id="pais" type="text" readonly /><br /><br />
+    
+        <button type="submit">Cadastrar</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
