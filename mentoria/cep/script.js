@@ -1,8 +1,7 @@
 async function fetchAddressFromCep() {
     const cep = document.querySelector("#cep").value.trim();
 
-    // Verifica se o CEP tem 8 dígitos e é numérico
-    if (cep.length === 8 && /^[0-9]+$/.test(cep)) {
+    if (/^[0-9]+$/.test(cep)) { // Apenas verifica se o CEP contém números
         try {
             const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
             if (!response.ok || !response.headers.get("Content-Type").includes("application/json")) {
@@ -21,7 +20,7 @@ async function fetchAddressFromCep() {
             alert("Não foi possível buscar o endereço. Tente novamente mais tarde.");
         }
     } else {
-        alert("Digite um CEP válido com 8 dígitos numéricos");
+        alert("Digite um CEP válido contendo apenas números");
     }
 }
 
@@ -30,7 +29,7 @@ function preencherCamposEndereco(data) {
     document.querySelector("#bairro").value = data.bairro || "";
     document.querySelector("#cidade").value = data.localidade || "";
     document.querySelector("#estado").value = data.uf || "";
-    document.querySelector("#pais").value = "Brasil"; // País fixo
+    document.querySelector("#pais").value = "Brasil";
 }
 
 document.querySelector("#user-form").addEventListener("submit", async (e) => {

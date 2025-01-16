@@ -28,5 +28,35 @@
     "cidade": "Uberlândia",
     "estado": "MG",
     "pais": "Brasil"
+  },
+  {
+    "nome": "billy",
+    "sexo": "masculino",
+    "cep": "38400358",
+    "rua": "Rua Carmo Gifoni",
+    "bairro": "Martins",
+    "cidade": "Uberlândia",
+    "estado": "MG",
+    "pais": "Brasil"
+  },
+  {
+    "nome": "beatle juice",
+    "sexo": "masculino",
+    "cep": "38400140",
+    "rua": "Praça Professor Henckmar Borges",
+    "bairro": "Lídice",
+    "cidade": "Uberlândia",
+    "estado": "MG",
+    "pais": "Brasil"
+  },
+  {
+    "nome": "vitor mendes",
+    "sexo": "masculino",
+    "cep": "38400358",
+    "rua": "Rua Carmo Gifoni",
+    "bairro": "Martins",
+    "cidade": "Uberlândia",
+    "estado": "MG",
+    "pais": "Brasil"
   }
 ]
